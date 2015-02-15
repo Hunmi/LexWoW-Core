@@ -18456,7 +18456,7 @@ SetSpellPowerCoeffsAll( sp, 0.0f);
 	sp = dbcSpell.LookupEntryForced( 107810 );
 	//if( sp != NULL )
 	{
-		sp->procChance = 10;	//old one was 2, but that never procs :(
+		sp->procChance = 5;	//old one was 2, but that never procs :(
 		sp->proc_interval = 60000 / 2; //intervall will force it to proc with 2% hitchance
 		sp->eff[0].EffectBasePoints = 0;	//summon only 1 tentacle
 	}
@@ -18472,7 +18472,7 @@ SetSpellPowerCoeffsAll( sp, 0.0f);
 	sp = dbcSpell.LookupEntryForced( 109841 );
 	//if( sp != NULL )
 	{
-		sp->procChance = 10;	//old one was 2, but that never procs :(
+		sp->procChance = 5;	//old one was 2, but that never procs :(
 		sp->proc_interval = 60000 / 2; //intervall will force it to proc with 2% hitchance
 		sp->eff[0].EffectBasePoints = 0;	//summon only 1 tentacle
 	}
@@ -18488,7 +18488,7 @@ SetSpellPowerCoeffsAll( sp, 0.0f);
 	sp = dbcSpell.LookupEntryForced( 109839 );
 	//if( sp != NULL )
 	{
-		sp->procChance = 10;	//old one was 2, but that never procs :(
+		sp->procChance = 5;	//old one was 2, but that never procs :(
 		sp->proc_interval = 60000 / 2; //intervall will force it to proc with 2% hitchance
 		sp->eff[0].EffectBasePoints = 0;	//summon only 1 tentacle
 	}
@@ -25482,11 +25482,11 @@ SetSpellPowerCoeffsAll( sp, 0.0f);
 		sp->eff[0].EffectApplyAuraName = SPELL_AURA_PROC_TRIGGER_SPELL;
 		sp->eff[0].EffectTriggerSpell = 101085;
 //		sp->proc_interval = 60000 * ( 100 - 16 ) / 100; //8 %chance
-		sp->proc_interval = 4000; 
+		sp->proc_interval = 10000; 
 //		sp->procChance = 17; //8%?sucks
 //		sp->procChance = 9; //they linked blizz topics that this should be 7.5% :(
 		sp->procChance = 100;	//need to tick on every DOT dmg
-		sp->proc_interval = 400; 
+//		sp->proc_interval = 400; 
 	}
 	sp = dbcSpell.LookupEntryForced(101085);
 	//if(sp != NULL)
